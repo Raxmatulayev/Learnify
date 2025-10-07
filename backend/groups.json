@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1759495203263,
+    "name": "Fizika",
+    "teacherId": 1759495144704,
+    "startDate": "",
+    "schedule": "Dushanba Chorshanba Juma",
+    "startTime": "15:00",
+    "endTime": "17:00",
+    "capacity": 20,
+    "status": "upcoming",
+    "students": [
+      1009,
+      1011,
+      1001
+    ],
+    "studentsCount": 3
+  },
+  {
+    "id": 1759495946028,
+    "name": "sde",
+    "teacherId": 1759495144704,
+    "startDate": "2222-12-22",
+    "schedule": "tredfgh hgfd ytr",
+    "startTime": "12:02",
+    "endTime": "12:33",
+    "capacity": 20,
+    "status": "upcoming",
+    "students": [
+      1016,
+      1005,
+      1002,
+      1001
+    ],
+    "studentsCount": 4
+  },
+  {
+    "id": 1759550689624,
+    "name": "Matematika",
+    "teacherId": 1759495144704,
+    "startDate": "2023-12-02",
+    "schedule": "Dushanba Chorshanba Juma",
+    "startTime": "14:40",
+    "endTime": "16:40",
+    "capacity": 20,
+    "status": "active",
+    "students": [
+      1009,
+      1006,
+      1002,
+      1005
+    ],
+    "studentsCount": 4
+  }
+]

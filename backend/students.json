@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1001,
+    "name": "Ali Valiyev",
+    "groupId": 1759495946028,
+    "group": "sde",
+    "phone": "+998901112233",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1002,
+    "name": "Dilnoza Karimova",
+    "groupId": 1759550689624,
+    "group": "Matematika",
+    "phone": "+998902223344",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1003,
+    "name": "Javlonbek Xolmatov",
+    "groupId": 1,
+    "group": "Frontend 101",
+    "phone": "+998933334455",
+    "status": "inactive",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1004,
+    "name": "Shahnoza Usmonova",
+    "groupId": 1,
+    "group": "Frontend 101",
+    "phone": "+998901111111",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1005,
+    "name": "Baxtiyor Sodiqov",
+    "groupId": 1759550689624,
+    "group": "Matematika",
+    "phone": "+998902222222",
+    "status": "inactive",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1006,
+    "name": "Malika Abdurahmonova",
+    "groupId": 1759550689624,
+    "group": "Matematika",
+    "phone": "+998903333333",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1007,
+    "name": "Farrux Qodirov",
+    "groupId": 1,
+    "group": "Frontend 101",
+    "phone": "+998904444444",
+    "status": "active",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1008,
+    "name": "Gulbahor Raxmonova",
+    "groupId": 1,
+    "group": "Frontend 101",
+    "phone": "+998905555555",
+    "status": "inactive",
+    "payment": "paid"
+  },
+  {
+    "id": 1009,
+    "name": "Sardorbek Karimov",
+    "groupId": 1759550689624,
+    "group": "Matematika",
+    "phone": "+998906666666",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1010,
+    "name": "Laylo To‘xtayeva",
+    "groupId": 1,
+    "group": "Frontend 101",
+    "phone": "+998907777777",
+    "status": "inactive",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1011,
+    "name": "Otabek Raximov",
+    "groupId": 1759495203263,
+    "group": "Fizika",
+    "phone": "+998908888888",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1012,
+    "name": "Dilorom Olimova",
+    "groupId": 3,
+    "group": "Design 101",
+    "phone": "+998909999999",
+    "status": "active",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1013,
+    "name": "Javohir Umarov",
+    "groupId": 1,
+    "group": "Frontend 101",
+    "phone": "+998901010101",
+    "status": "inactive",
+    "payment": "paid"
+  },
+  {
+    "id": 1014,
+    "name": "Madina Qayumova",
+    "groupId": 2,
+    "group": "Backend 202",
+    "phone": "+998902020202",
+    "status": "active",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1015,
+    "name": "Islomjon Yo‘ldoshev",
+    "groupId": 3,
+    "group": "Design 101",
+    "phone": "+998903030303",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1016,
+    "name": "Muslima Axmedova",
+    "groupId": 1759495946028,
+    "group": "sde",
+    "phone": "+998904040404",
+    "status": "inactive",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1017,
+    "name": "Oybek Tursunov",
+    "groupId": 2,
+    "group": "Backend 202",
+    "phone": "+998905050505",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1018,
+    "name": "Nilufar Mamatova",
+    "groupId": 3,
+    "group": "Design 101",
+    "phone": "+998906060606",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1019,
+    "name": "Anvarbek Shodmonov",
+    "groupId": 1,
+    "group": "Frontend 101",
+    "phone": "+998907070707",
+    "status": "inactive",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1020,
+    "name": "Lobar Usmonova",
+    "groupId": 2,
+    "group": "Backend 202",
+    "phone": "+998908080808",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1021,
+    "name": "Alisher Abrorbekov",
+    "groupId": 1759495203263,
+    "group": "Fizika",
+    "phone": "+998991235674",
+    "status": "active",
+    "payment": "unpaid"
+  }
+]
