@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import LoadingSpinner, { StudentsSkeleton } from '../components/LoadingSpinner';
+import { API_ENDPOINTS } from '../config/api';
 
 export default function Students() {
   const [students, setStudents] = useState([]);
@@ -32,7 +33,7 @@ export default function Students() {
     payment: 'unpaid'
   });
 
-  const API_URL = "http://localhost:5000/students";
+  const API_URL = API_ENDPOINTS.STUDENTS;
 
   // 🔹 Ma'lumotlarni olish
   const loadStudents = async () => {
@@ -266,9 +267,9 @@ export default function Students() {
   };
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       <Sidebar />
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 md:ml-64 ml-0 flex flex-col">
         <Navbar />
         <main className="flex-1 overflow-auto p-6">
           {/* Header */}

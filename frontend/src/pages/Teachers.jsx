@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import { API_ENDPOINTS, API_BASE } from "../config/api";
 
 // Modal forma komponenti
 function TeacherModal({ teacher, onClose, onSave }) {
@@ -163,7 +164,7 @@ export default function Teachers() {
   useEffect(() => {
     const fetchTeachersData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/teachers");
+        const res = await fetch(API_ENDPOINTS.TEACHERS);
         const data = await res.json();
         setTeachers(data);
         setFilteredTeachers(data);
@@ -180,7 +181,7 @@ export default function Teachers() {
   useEffect(() => {
     const fetchStudentsData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/students");
+        const res = await fetch(API_ENDPOINTS.STUDENTS);
         const data = await res.json();
         setStudents(data);
       } catch (error) {
@@ -211,7 +212,7 @@ export default function Teachers() {
 
   // 📌 Qo'shish
   const addTeacher = async (teacherData) => {
-    const res = await fetch("http://localhost:5000/teachers", {
+    const res = await fetch(API_ENDPOINTS.TEACHERS, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(teacherData),
@@ -223,7 +224,7 @@ export default function Teachers() {
 
   // 📌 Tahrirlash
   const saveEdit = async (updatedTeacher) => {
-    const res = await fetch(`http://localhost:5000/teachers/${updatedTeacher.id}`, {
+    const res = await fetch(`${API_ENDPOINTS.TEACHERS}/${updatedTeacher.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedTeacher),
@@ -238,7 +239,7 @@ export default function Teachers() {
 
   // 📌 O'chirish
   const deleteTeacher = async (id) => {
-    await fetch(`http://localhost:5000/teachers/${id}`, { method: "DELETE" });
+    await fetch(`${API_ENDPOINTS.TEACHERS}/${id}`, { method: "DELETE" });
     setTeachers((prev) => prev.filter((t) => t.id !== id));
   };
 
@@ -284,9 +285,9 @@ export default function Teachers() {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
         <Sidebar />
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 md:ml-64 ml-0 flex flex-col">
           <Navbar />
           <main className="flex-1 overflow-auto p-6">
             <TeachersSkeleton />

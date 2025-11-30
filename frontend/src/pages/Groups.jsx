@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
+import { API_ENDPOINTS, API_BASE } from "../config/api";
 
 export default function Groups() {
   const [groups, setGroups] = useState([]);
@@ -35,9 +36,9 @@ export default function Groups() {
         setError(null);
         
         const [groupsRes, studentsRes, teachersRes] = await Promise.all([
-          fetch("http://localhost:5000/groups"),
-          fetch("http://localhost:5000/students"),
-          fetch("http://localhost:5000/teachers")
+          fetch(API_ENDPOINTS.GROUPS),
+          fetch(API_ENDPOINTS.STUDENTS),
+          fetch(API_ENDPOINTS.TEACHERS)
         ]);
 
         if (!groupsRes.ok) throw new Error("Guruhlarni yuklab bo'lmadi");
@@ -62,7 +63,7 @@ export default function Groups() {
   // Yangi guruh yaratish
   const handleCreateGroup = async () => {
     try {
-      const response = await fetch("http://localhost:5000/groups", {
+      const response = await fetch(API_ENDPOINTS.GROUPS, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -104,7 +105,7 @@ export default function Groups() {
   // Guruhga student qo'shish
   const handleAddStudentToGroup = async (groupId, studentId) => {
     try {
-      const response = await fetch(`http://localhost:5000/groups/${groupId}/add-student`, {
+      const response = await fetch(`${API_ENDPOINTS.GROUPS}/${groupId}/add-student`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -130,7 +131,7 @@ export default function Groups() {
       }
 
       // Studentlarni yangilash
-      const studentsRes = await fetch("http://localhost:5000/students");
+      const studentsRes = await fetch(API_ENDPOINTS.STUDENTS);
       const studentsData = await studentsRes.json();
       setStudents(studentsData);
 
@@ -145,7 +146,7 @@ export default function Groups() {
   // Guruhdan studentni o'chirish
   const handleRemoveStudentFromGroup = async (groupId, studentId) => {
     try {
-      const response = await fetch(`http://localhost:5000/groups/${groupId}/remove-student`, {
+      const response = await fetch(`${API_ENDPOINTS.GROUPS}/${groupId}/remove-student`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -171,7 +172,7 @@ export default function Groups() {
       }
 
       // Studentlarni yangilash
-      const studentsRes = await fetch("http://localhost:5000/students");
+      const studentsRes = await fetch(API_ENDPOINTS.STUDENTS);
       const studentsData = await studentsRes.json();
       setStudents(studentsData);
 
@@ -228,7 +229,7 @@ export default function Groups() {
   // Guruh tafsilotlari modal
   const handleViewDetails = async (group) => {
     try {
-      const res = await fetch(`http://localhost:5000/groups/${group.id}`, {
+      const res = await fetch(`${API_ENDPOINTS.GROUPS}/${group.id}`, {
         headers: {
           "Accept": "application/json"
         }
@@ -266,9 +267,9 @@ export default function Groups() {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen bg-gray-50">
+      <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
         <Sidebar />
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 md:ml-64 ml-0 flex flex-col">
           <Navbar />
           <main className="flex-1 p-6 flex items-center justify-center">
             <div className="flex flex-col items-center">

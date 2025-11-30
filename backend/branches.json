@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "companyId": 1,
+    "name": "Asaxiy Chilonzor",
+    "address": "Toshkent shahar, Chilonzor tumani",
+    "phone": "+998901112233",
+    "email": "chilonzor@asaxiy.uz",
+    "status": "active",
+    "createdAt": "2024-01-01 00:00:00"
+  }
+]

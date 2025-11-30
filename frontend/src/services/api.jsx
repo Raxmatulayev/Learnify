@@ -1,5 +1,7 @@
 // services/api.js
-const API_BASE_URL = 'http://localhost:3001/api'; // Backend URL
+import { API_BASE } from '../config/api';
+
+const API_BASE_URL = API_BASE; // Backend URL
 
 // Simulate API delay
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));

@@ -1,4 +1,3 @@
-// components/LoadingSpinner.js
 import React from 'react';
 
 export default function LoadingSpinner({ size = 'medium', text = "Yuklanmoqda..." }) {

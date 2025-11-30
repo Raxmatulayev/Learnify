@@ -24,7 +24,7 @@
     "group": "Frontend 101",
     "phone": "+998933334455",
     "status": "inactive",
-    "payment": "unpaid"
+    "payment": "paid"
   },
   {
     "id": 1004,
@@ -33,7 +33,9 @@
     "group": "Frontend 101",
     "phone": "+998901111111",
     "status": "active",
-    "payment": "paid"
+    "payment": "paid",
+    "balance": -500000.0,
+    "paymentStatus": "paid"
   },
   {
     "id": 1005,
@@ -60,7 +62,7 @@
     "group": "Frontend 101",
     "phone": "+998904444444",
     "status": "active",
-    "payment": "unpaid"
+    "payment": "paid"
   },
   {
     "id": 1008,
@@ -110,8 +112,8 @@
   {
     "id": 1013,
     "name": "Javohir Umarov",
-    "groupId": 1,
-    "group": "Frontend 101",
+    "groupId": 1759550689624,
+    "group": "Matematika",
     "phone": "+998901010101",
     "status": "inactive",
     "payment": "paid"
@@ -123,7 +125,9 @@
     "group": "Backend 202",
     "phone": "+998902020202",
     "status": "active",
-    "payment": "unpaid"
+    "payment": "unpaid",
+    "balance": -12121212.0,
+    "paymentStatus": "paid"
   },
   {
     "id": 1015,
@@ -185,6 +189,23 @@
     "groupId": 1759495203263,
     "group": "Fizika",
     "phone": "+998991235674",
+    "status": "active",
+    "payment": "unpaid"
+  },
+  {
+    "id": 1763621398323,
+    "name": "Test group",
+    "group": "Design 101",
+    "phone": "+998999991221",
+    "status": "active",
+    "payment": "paid"
+  },
+  {
+    "id": 1764405193439,
+    "name": "ashfx",
+    "groupId": 1759495203263,
+    "group": "Fizika",
+    "phone": "12334",
     "status": "active",
     "payment": "unpaid"
   }

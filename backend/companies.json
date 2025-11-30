@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Asaxiy",
+    "address": "Toshkent shahar",
+    "phone": "+998901234567",
+    "email": "info@asaxiy.uz",
+    "status": "active",
+    "createdAt": "2024-01-01 00:00:00"
+  },
+  {
+    "id": 1764311624053,
+    "name": "Asaxiy 2",
+    "address": "Namangan",
+    "phone": "+998901230987",
+    "email": "info@test.uz",
+    "status": "active",
+    "createdAt": "2025-11-28 11:33:44"
+  }
+]

@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
-
-// API bazasi URL
-const API_BASE = "http://localhost:5000";
+import { API_BASE } from "../config/api";
 
 // Skeleton loader komponenti
 function DashboardSkeleton() {
@@ -999,11 +997,11 @@ export default function Dashboard() {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
         <Sidebar />
-        <div className="flex-1">
+        <div className="flex-1 md:ml-64 ml-0 flex flex-col">
           <Navbar />
-          <main className="p-6">
+          <main className="flex-1 overflow-auto p-6">
             <DashboardSkeleton />
           </main>
         </div>
@@ -1012,11 +1010,11 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       <Sidebar />
-      <div className="flex-1">
+      <div className="flex-1 md:ml-64 ml-0 flex flex-col">
         <Navbar />
-        <main className="p-6">
+        <main className="flex-1 overflow-auto p-6">
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-gray-800 mb-2">Dashboard</h1>

@@ -1,3 +1,20 @@
 [
-    
+  {
+    "id": 1763621549033,
+    "studentId": 1004,
+    "amount": 500000.0,
+    "paymentDate": "2025-11-20",
+    "paymentType": "card",
+    "description": "tezkor",
+    "createdAt": "2025-11-20 11:52:29"
+  },
+  {
+    "id": 1763621639935,
+    "studentId": 1014,
+    "amount": 12121212.0,
+    "paymentDate": "2025-11-20",
+    "paymentType": "card",
+    "description": "test\n",
+    "createdAt": "2025-11-20 11:53:59"
+  }
 ]

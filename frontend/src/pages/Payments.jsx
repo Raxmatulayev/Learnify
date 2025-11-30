@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
-
-const API_BASE = "http://localhost:5000";
+import { API_BASE } from "../config/api";
 
 // Skeleton loader komponenti
 function PaymentsSkeleton() {
@@ -656,9 +655,9 @@ export default function Payments() {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
         <Sidebar />
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 md:ml-64 ml-0 flex flex-col">
           <Navbar />
           <main className="flex-1 overflow-auto p-6">
             <PaymentsSkeleton />
@@ -670,9 +669,9 @@ export default function Payments() {
 
   if (connectionError) {
     return (
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
         <Sidebar />
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 md:ml-64 ml-0 flex flex-col">
           <Navbar />
           <main className="flex-1 overflow-auto p-6">
             <NoConnectionView onRetry={fetchPaymentsData} />
@@ -683,9 +682,9 @@ export default function Payments() {
   }
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       <Sidebar />
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 md:ml-64 ml-0 flex flex-col">
         <Navbar />
         <main className="flex-1 overflow-auto p-6">
           {/* Header */}
